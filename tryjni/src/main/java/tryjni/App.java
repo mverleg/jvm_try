@@ -7,6 +7,7 @@ import javax.annotation.Nonnull;
  */
 public class App {
 	public static void main(@Nonnull String[] args) {
+		//System.loadLibrary("mul.so");
 		double[][] A = make2D(4, 5);
 		double[][] B = make2D(5, 3);
 		double[][] C = mul22(A, B);
@@ -14,7 +15,7 @@ public class App {
 	}
 
 	@Nonnull
-	native static double[][] mul22(@Nonnull double[][] left, @Nonnull double[][] right);
+	public native static double[][] mul22(@Nonnull double[][] left, @Nonnull double[][] right);
 
 	public static double[][] make2D(int a, int b) {
 		double[][] matrix = new double[a][b];
