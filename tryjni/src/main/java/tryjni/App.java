@@ -19,7 +19,7 @@ public class App {
 	}
 
 	@Nonnull
-	public native double[][] mul22(@Nonnull double[][] left, @Nonnull double[][] right);
+	public static native double[][] mul22(@Nonnull double[][] left, @Nonnull double[][] right);
 
 	public static double[][] make2D(int a, int b) {
 		double[][] matrix = new double[a][b];
